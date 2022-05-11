@@ -45,7 +45,7 @@ getLayerMaps <- function(layers) {
 }
 
 getLayerMap <- function(layer, i) {
-    start <- paste0('[_LAYER', i-1, '] = LAYOUT(')
+    start <- paste0('[_LAYER', i-1, '] = LAYOUT_all(')
     # Remove "ANY()"
     ids <- which(str_detect(layer, "^ANY\\("))
     if (length(ids) > 0) {
